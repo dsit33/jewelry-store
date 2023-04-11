@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 9vh;
+    padding-top: 2vh;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+nav li {
+    display: inline;
+    padding: 2em;
+}
+
+nav a {
+    color: black;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.footer {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.logo.footer {
+    height: auto;
+    width: 20em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.row1 {
+    padding: 2em;
+}
+
+.row2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row1-item, .row2-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signet {
+    max-width: 35vw;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.signet:hover {
+    transform: scale(1.10);
+}
+
+.promo-text {
+    text-align: center;
+    padding: 1em;
+    font-size: large;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+}
+
+.chain {
+    width: 100%;
+}
+
+.cuban {
+    width: 30%;
+}
