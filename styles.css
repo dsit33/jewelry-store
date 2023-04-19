@@ -83,6 +83,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.2s ease-in-out;
 }
 
 .row2-item {
@@ -101,18 +102,17 @@ footer {
 .signet {
     max-width: 35vw;
     height: auto;
-    transition: transform 0.2s ease-in-out;
     padding-bottom: 2em;
 }
 
-.signet:hover {
+.row1-item:hover {
     transform: scale(1.10);
 }
 
 .promo-text {
-    text-align: center;
-    padding: 1em;
-    font-size: large;
-    background-color: #f2f2f2;
-    margin: 0 auto;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
 }
