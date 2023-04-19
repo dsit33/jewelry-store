@@ -73,19 +73,36 @@ footer {
 }
 
 .row2 {
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }
 
-.row1-item, .row2-item {
+.row1-item {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row2-item {
+    width: 33.33%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.row2-item > img {
+    width: 100%;
+    height: 90%;
 }
 
 .signet {
     max-width: 35vw;
     height: auto;
     transition: transform 0.2s ease-in-out;
+    padding-bottom: 2em;
 }
 
 .signet:hover {
@@ -98,12 +115,4 @@ footer {
     font-size: large;
     background-color: #f2f2f2;
     margin: 0 auto;
-}
-
-.chain {
-    width: 100%;
-}
-
-.cuban {
-    width: 30%;
 }
